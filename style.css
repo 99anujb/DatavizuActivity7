@@ -1,0 +1,58 @@
+.axisX {
+    font-size: 30pt;
+}
+
+.axisY {
+    font-size: 30pt;
+}
+
+.axis {
+    font-size: 20pt;
+}
+
+circle {
+    fill-opacity: 0.7;
+    transition: fill-opacity 0.3s, stroke-width 0.3s; /* Smooth transitions for hover and selection */
+}
+
+/* Style for selected points */
+.selected {
+    stroke: black;
+    stroke-width: 3px;
+    fill-opacity: 1; /* Fully visible for selected points */
+}
+
+/* Style for dimmed points */
+.dimmed {
+    fill-opacity: 0.1; /* Makes unselected points less prominent */
+}
+
+/* Style for selected legend items */
+.legendSelect {
+    fill-opacity: 0.3; /* Slightly dimmed for non-selected legends */
+    stroke: black; /* Highlight the border of selected legends */
+    stroke-width: 2px;
+    transition: fill-opacity 0.3s, stroke-width 0.3s; /* Smooth transitions */
+}
+
+.title {
+    font-size: 25pt;
+    font-family: sans-serif;
+    text-anchor: middle;
+    color: black;
+    z-index: 1001;
+}
+
+.label {
+    font-size: 20pt;
+    font-family: sans-serif;
+    text-anchor: middle;
+    z-index: 1001;
+}
+
+.legend {
+    text-anchor: start;
+    font-size: 18pt;
+    font-family: sans-serif;
+    cursor: pointer; /* Makes the legend items clickable */
+}
